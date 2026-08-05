@@ -1,3 +1,16 @@
+## Artifactory Composer (required)
+
+All package resolution must go through Artifactory `composer-virt`. Packagist is disabled.
+
+```bash
+export COMPOSER_AUTH='{"http-basic":{"gdartifactory1.jfrog.io":{"username":"<USER>","password":"<IDENTITY_TOKEN>"}}}'
+composer install
+```
+
+Or store credentials in `~/.composer/auth.json` (never commit tokens).
+
+------
+
 [![Build Status](https://apm-ci.elastic.co/buildStatus/icon?job=apm-agent-php%2Fecs-logging-php-mbp%2Fmain)](https://apm-ci.elastic.co/job/apm-agent-php/job/ecs-logging-php-mbp/job/main/)
 
 # ECS Logging for PHP

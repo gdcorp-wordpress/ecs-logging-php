@@ -46,5 +46,12 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "repositories": {
+        "packagist.org": false,
+        "artifactory": {
+            "type": "composer",
+            "url": "https://gdartifactory1.jfrog.io/artifactory/api/composer/composer-virt/"
+        }
     }
 }
