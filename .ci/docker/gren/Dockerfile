@@ -7,5 +7,7 @@ RUN apt-get update -qq -y \
 RUN npm install github-release-notes@0.17.3 -g
 WORKDIR /app
 
+USER node
+
 ENTRYPOINT [ "/app/.ci/docker/gren/entrypoint.sh" ]
 CMD [ "release" ]
